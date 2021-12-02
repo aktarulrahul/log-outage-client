@@ -14,7 +14,7 @@ function App() {
     const time = new Date();
     const logoutTime = time.toLocaleTimeString([], { hour12: false });
     axios
-      .put(`http://localhost:5000/logout/${loginID}`, {
+      .put(`https://log-outage.herokuapp.com/logout/${loginID}`, {
         logoutTime: logoutTime,
       })
       .then((res) => {

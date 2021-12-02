@@ -22,7 +22,7 @@ const Login = ({ setLoginID }) => {
       // logoutTime: '',
     };
     // send to the server
-    fetch('http://localhost:5000/login', {
+    fetch('https://log-outage.herokuapp.com/login', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

@@ -7,7 +7,7 @@ const DataGraph = ({ isStateChange }) => {
 
   const applicationArr = [];
   useEffect(() => {
-    fetch('http://localhost:5000/logs')
+    fetch('https://log-outage.herokuapp.com/logs')
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(true);

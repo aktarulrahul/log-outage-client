@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-
 const DataTable = ({ isStateChange }) => {
   const [logs, setLogs] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/logs')
+    fetch('https://log-outage.herokuapp.com/logs')
       .then((res) => res.json())
       .then((data) => setLogs(data));
   }, [isStateChange]);
