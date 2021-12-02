@@ -36,7 +36,7 @@ function App() {
       )}
 
       <DataTable isStateChange={isStateChange} />
-      <DataGraph />
+      <DataGraph isStateChange={isStateChange} />
     </div>
   );
 }

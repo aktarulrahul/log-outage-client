@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+
 const DataTable = ({ isStateChange }) => {
   const [logs, setLogs] = useState([]);
   useEffect(() => {
@@ -9,7 +10,7 @@ const DataTable = ({ isStateChange }) => {
   }, [isStateChange]);
   return (
     <div className="my-3">
-      <table className="table-auto mx-auto border border-blue-500 text-left ">
+      <table className="table-auto mx-auto border border-blue-500 text-left">
         <thead>
           <tr className="bg-blue-400 text-white">
             <th className="pr-2 font-medium">Received From</th>
@@ -21,7 +22,7 @@ const DataTable = ({ isStateChange }) => {
         <tbody>
           {logs.map((log) => (
             <tr key={log._id} className="border border-blue-500">
-              <td>{log.receivedFrom}</td>
+              <td className="px-2">{log.receivedFrom}</td>
               <td>{log.name}</td>
               <td>{log.loginTime}</td>
               <td>{log.logoutTime}</td>
